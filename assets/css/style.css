@@ -1,0 +1,231 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --title-font:#3A404E;
+    font-family: 'Inter', sans-serif;
+  }
+/*  */
+
+.navbar{
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar__logo{
+    color:var(--title-font);
+    font-weight:700;
+    display: flex;
+    align-items: center;
+    
+}
+.navbar__logo > img, .title{
+    padding: 5px;
+}
+
+.navbar__menu{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.navbar__menu--item{
+    padding: 5px;
+}
+.navbar__button{
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    font-family: 'Inter', sans-serif;
+
+}
+.navbar__button--signin{
+    background-color: brown;
+    color: white;
+}
+.navbar__button--signup{
+    color: var(--text-color);
+}
+
+/* Main */
+.main{
+    margin:0 12vw ;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+}
+.main__about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:96px 12vw 96px 12vw ;
+}
+
+.main__about h3{
+    color: var(--main-color);
+}
+.main__about h1{
+    font-size: 48px;
+    text-align: center;
+}
+.main__about span{
+    text-align: center;
+    
+    color: var(--text-color);
+}
+.main__information{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.main__information--item{
+    padding: 0px;
+    margin: 32px 32px;
+    
+}
+.main__information--item:first-child{
+    margin-left: 25px;
+}
+.main__information--item h1{
+    color: var(--main-color);
+    font-size: 60px;
+}
+.main__information--item p{
+    color: var(--text-color);
+
+}
+/* JOBS */
+.jobs{
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+.jobs__panel span{
+    color: var(--main-color);
+    padding: 10px;
+    border-radius: 16px;
+    background-color: rgba(142, 36, 36, 0.05);;
+   
+}
+.jobs__panel p{
+    color: var(--text-color);
+}
+
+.jobs__panel{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+.jobs__panel img{
+    border-radius: 10px;
+    width: 80vw;
+}
+
+.jobs__offer{
+    margin:50px;
+    
+}
+.jobs__offer--card{
+    border: 1px solid #EAECF0;
+    border-radius: 5px;
+    padding: 24px 24px 28px 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+}
+.jobs__offer--card li{
+    color: var(--text-color);
+    list-style:none;
+}
+
+
+/* Colaboradores */
+
+.colaboradores{
+    padding: 80px;
+    border-radius: 20px;
+    margin:0px 12vw 96px 12vw ;
+    background-color: rgba(142, 36, 36, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.colaboradores h1{
+    text-align: center;
+}
+.colaboradores figcaption{
+    margin-top: 20px;
+}
+
+.colaboradores span{
+    color: var(--main-color);
+}
+.colaboradores p{
+    color: var(--text-color);
+    text-align: center;
+}
+.colaboradores__figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.colaboradores__figure img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    image-resolution: 100px;
+}
+/* Footer - Newsletter */
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9FAFB;
+
+}
+
+.newsletter p, .newsletter span{
+    color: var(--text-color);
+    
+}
+
+/* RESPONSIVE  */
+@media (max-width: 800px){
+    .main__information{
+        display: flex;
+        flex-direction: column;
+    }
+    .jobs__panel, .jobs__offer, .main__information--item{
+        text-align: center;
+    }
+    .colaboradores{
+        padding: 40px;
+    }
+    .colaboradores h1{
+        font-size: small;
+    }
+    .colaboradores span{
+        text-align: center;
+    }
+    .newsletter h1,.newsletter span, .newsletter p{
+        font-size: small;
+
+
+    }
+    .navbar__menu,.buttons-group{
+        display: none;
+    }
+    .navbar{
+        justify-content: center;
+    }
+
+
+    /* SIDE MENU */
+    
+
+}
