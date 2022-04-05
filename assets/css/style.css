@@ -193,6 +193,9 @@
     color: var(--text-color);
     
 }
+#navbar__btn--mobile{
+    display: none;
+}
 
 /* RESPONSIVE  */
 @media (max-width: 800px){
@@ -200,8 +203,16 @@
         display: flex;
         flex-direction: column;
     }
-    .jobs__panel, .jobs__offer, .main__information--item{
+    .jobs__panel, .main__information--item{
         text-align: center;
+    }
+    .jobs__offer span, .jobs__offer--card > span{
+        text-align: center;
+    }
+    .jobs__offer--card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .colaboradores{
         padding: 40px;
@@ -212,20 +223,88 @@
     .colaboradores span{
         text-align: center;
     }
-    .newsletter h1,.newsletter span, .newsletter p{
-        font-size: small;
-
-
-    }
     .navbar__menu,.buttons-group{
         display: none;
     }
     .navbar{
         justify-content: center;
     }
+    .newsletter h1,.newsletter span, .newsletter p{
+        font-size: small;
+        text-align: center;
+    }
+    .newsletter{
+        text-align: center;
+    }
+    .newsletter input:last-child{
+        margin-top: 10px;
+    }
+    
 
 
     /* SIDE MENU */
+    #btn-mobile{
+        display: block;
+    }   
+    .navbar__menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: var(--main-color);
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+      }
+      #nav__mobile.active .navbar__menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+      }
+      .navbar__menu li {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        color: white;
+        
+      }
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav__mobile.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav__mobile.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav__mobile.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
     
 
 }

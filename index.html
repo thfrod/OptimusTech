@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,40 +10,48 @@
     <title>Optimus Tech</title>
     
 </head>
+
 <body>
     <header class="navbar">
         <div class="navbar__logo">
             <img src="assets/img/logo.png" alt="Logo da OptimusTech">
             <span class="title">Optimus Tech</span>
         </div>
-        <nav>
-            <ul class="navbar__menu">
+        <nav id="nav__mobile">
+            
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul class="navbar__menu" role="menu">
                 <li class="navbar__menu--item">Home</li>
                 <li class="navbar__menu--item">Produtos</li>
                 <li class="navbar__menu--item">Recursos</li>
                 <li class="navbar__menu--item">Sobre nós</li>
             </ul>
         </nav>
-            <div class="buttons-group navbar__buttons">
-                <input class="navbar__button navbar__button--signup"type="button" value="Entrar">
-                <input class="navbar__button navbar__button--signin"type="button" value="Cadastrar">
-            </div>
+        <div class="buttons-group navbar__buttons">
+            <input class="navbar__button navbar__button--signup" type="button" value="Entrar">
+            <input class="navbar__button navbar__button--signin" type="button" value="Cadastrar">
+        </div>
+
+        
     </header>
 
     <main class="main">
         <section class="main__about">
             <h3>Sobre nós</h3>
             <h1>Por que somos diferentes?</h1>
-            <span>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</span>
-        </section>
-        <section class="main__information">
-            <article class="main__information--item">
-                <h1>400+</h1>
-                <span>Projetos concluídos</span>
-                <p>Nós ajudamos a construir mais de 400 projetos incríveis.</p>
-            </article>
-            <article class="main__information--item">
-                <h1>100+</h1>
+            <span>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se
+                concentrarem naquilo que é realmente importante para elas.</span>
+            </section>
+            <section class="main__information">
+                <article class="main__information--item">
+                    <h1>400+</h1>
+                    <span>Projetos concluídos</span>
+                    <p>Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+                </article>
+                <article class="main__information--item">
+                    <h1>100+</h1>
                 <span>Colaboradores</span>
                 <p>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
             </article>
@@ -76,32 +85,32 @@
                     </div>
                     <div class="jobs__offer--card">
                         <span>UX Designer</span>
-                        <ul >
+                        <ul>
                             <li>Full-time</li>
                             <li>Faixa salarial: R$6.000,00</li>
                         </ul>
                     </div>
                 </article>
-                
+
                 <article>
                     <span>Desenvolvimento de Software</span>
                     <div class="jobs__offer--card">
                         <span>Desenvolvedor(a) iOS</span>
-                        <ul >
+                        <ul>
                             <li>Full-time</li>
                             <li>Faixa salarial: R$6.000,00</li>
                         </ul>
                     </div>
                     <div class="jobs__offer--card">
                         <span>Desenvolvedor(a) Front-end</span>
-                        <ul >
+                        <ul>
                             <li>Full-time</li>
                             <li>Faixa salarial: R$6.000,00</li>
                         </ul>
                     </div>
                     <div class="jobs__offer--card">
                         <span>Desenvolvedor(a) Back-end</span>
-                        <ul >
+                        <ul>
                             <li>Full-time</li>
                             <li>Faixa salarial: R$6.000,00</li>
                         </ul>
@@ -112,26 +121,30 @@
     </main>
     <section class="colaboradores">
         <span>Veja o que os nossos colaboradores falam sobre nós</span>
-        <h1><i>"OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível."</i></h1>
-
-        <figure class="colaboradores__figure">
-            <img src="assets/img/perfil.jpg" alt="" >
+        <h1><i>"OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio
+            possível."</i></h1>
+            
+            <figure class="colaboradores__figure">
+            <img src="assets/img/perfil.jpg" alt="">
             <figcaption>Thiago Ferreria</figcaption>
             <p>Desenvolvedor Web</p>
         </figure>
-
+        
     </section>
-
+    
     <footer class="newsletter">
         <h1>Acompanhe as nossas oportunidades</h1>
         <span>Seja o primeiro a saber quando novas vagas serão abertas!</span>
         <p></p>
         <form action="#">
-            <input type="email" name="" style="border: solid 1px var(--text-color);"class="navbar__button"placeholder="Seu melhor e-mail"id="">
-            <input class="navbar__button navbar__button--signin"type="button" value="Cadastrar">
+            <input type="email" name="" style="border: solid 1px var(--text-color);" class="navbar__button"
+                placeholder="Seu melhor e-mail" id="">
+            <input class="navbar__button navbar__button--signin" type="button" value="Cadastrar">
         </form>
-        
+
         <p>&copy;2022 OptimusTech. Todos os direitos reservados.</p>
     </footer>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
