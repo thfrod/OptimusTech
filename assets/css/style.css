@@ -193,7 +193,7 @@
     color: var(--text-color);
     
 }
-#navbar__btn--mobile{
+#btn-mobile{
     display: none;
 }
 
