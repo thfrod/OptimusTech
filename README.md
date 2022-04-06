@@ -15,7 +15,7 @@
 
 ### Ajustes e melhorias
 
-O projeto foi concluído mas nunca sabemos quando novas ideias irão surgir e as próximas atualizações serão esquematizadas como as seguintes tarefas concluídas:
+O projeto foi concluído mas nunca sabemos quando novas ideias irão surgir. Por isso, as próximas atualizações serão esquematizadas como as seguintes tarefas concluídas:
 
 - [x] Header
 - [x] Corpo
