@@ -6,23 +6,30 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
  -->
-<img src="exemplo-image.png" alt="exemplo imagem">
+<img src="demo/NavBar.png" alt="Cabeçalho do Projeto">
+<img src="demo/Cabeçalho.png" alt="Aba Sobre do Projeto" >
 
-> O projeto OptimusTech foi construído seguindo um layout desenvolvido no figma focado na experiência do usuário e pode ser encontrado [aqui](https://www.figma.com/file/781rxJrbtTQMBIP2qfb4AQ/7daysOfCode-HTML-CSS-(Copy)?node-id=0%3A1).
+> O projeto OptimusTech foi construído seguindo um layout desenvolvido no figma focado na experiência do usuário e pode ser encontrado [aqui](https://www.figma.com/file/781rxJrbtTQMBIP2qfb4AQ/7daysOfCode-HTML-CSS-(Copy)?node-id=0%3A1).<br>
+> Por ser uma landing-page, os butões e links não possuem um alvo de redirecionamento.<br>
+> A live demo do projeto pode ser encontrada [aqui](https://optimus-tech-thfrod.vercel.app)
 
 ### Ajustes e melhorias
 
 O projeto foi concluído mas nunca sabemos quando novas ideias irão surgir e as próximas atualizações serão esquematizadas como as seguintes tarefas concluídas:
 
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] Tarefa 3
-- [ ] Tarefa 4
-- [ ] Tarefa 5
+- [x] Header
+- [x] Corpo
+  - [x] "Por que somos diferentes?"
+  - [x] "Métricas"
+  - [x] "Depoimentos"
+ - [x] "Vagas"
+- [x] Newsletter
+- [x] Responsividade
+- [x] Menu hambúrguer para dispositivos móveis
 
 ## 💻 Pré-requisitos
 
-O projeto é responsivo e é capaz de se adaptar em qualquer dispositivo e pode ser visualizado em qualquer navegador. 
+O projeto é responsivo e capaz de se adaptar em qualquer dispositivo e pode ser visualizado em qualquer navegador.<br>
 Caso queira incluir novas features ou utilizar o projeto para outros intuitos, basta clonar o repositório e começar a codar na IDE de sua preferência.
 
 ## 📫 Contribuindo para o OptimusTech
@@ -45,9 +52,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/63413719?v=4" width="100px;" alt="Thiago Ferreira Rodrigues no GitHub"/><br>
         <sub>
-          <b>Iuri Silva</b>
+          <b>Thiago Ferreira</b>
         </sub>
       </a>
     </td>
